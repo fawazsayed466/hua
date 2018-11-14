@@ -26,6 +26,11 @@ client.user.setGame(`_Mr_FoFo🍻|_I_am_Strong<_*🍺`,'https://www.twitch.tv/fo
 
 
 
+client.on('message', message => {
+    if (message.content === 'فواز') {
+        message.reply('عيوني');
+      }
+});
 
 
 
