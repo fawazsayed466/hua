@@ -28,7 +28,7 @@ client.user.setGame(`_Mr_FoFo🍻|_I_am_Strong<_*🍺`,'https://www.twitch.tv/fo
 
 
 
-const developers = ["513267781211389952"]
+const developers = ["513267781211389952",""]
 client.on('message', message => {
     var argresult = message.content.split(` `).slice(1).join(' ');
       if (!developers.includes(message.author.id)) return;
