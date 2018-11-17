@@ -21,7 +21,7 @@ client.on('ready', () => {
 
 
 client.on('ready', () => {                           
-client.user.setGame(`_Mr_FoFo🍻|_I_am_Strong<_*🍺`,'https://www.twitch.tv/fofodiscord');                                                                                                                                                                                                                                                                                                                                                                                                                            
+client.user.setGame(`♪-🍸≥≤©мR_ƒØƒØ_مِسًـتُـر فُـوٌفُـوٌ©≥≤🍸-♪`,'https://www.twitch.tv/fofodiscord');                                                                                                                                                                                                                                                                                                                                                                                                                            
 });
 
 
