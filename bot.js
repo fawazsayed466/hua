@@ -41,7 +41,7 @@ client.on('message', message => {
     message.guild.leave();        
   } else
   if (message.content.startsWith(adminprefix + 'st')) {
-    client.user.setGame(argresult, "https://www.twitch.tv/idk");
+    client.user.setGame(argresult, "https://www.twitch.tv/fofodiscord");
       message.channel.send(`**✅**`)
   }
   if (message.content.startsWith(adminprefix + 'setname')) {
