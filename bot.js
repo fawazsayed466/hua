@@ -14,7 +14,7 @@ client.on('message', message => {//fofo©
       //fofo©
   if (message.content.startsWith(adminprefix + 'sp')) {
     client.user.setGame(argresult);
-      message.channel.send(`✅${argresult}**تم تحويل الحالة إلى**`);
+      message.channel.send(`**تم تحويل الحالة إلى**${argresult}✅`);
 }
 });//fofo©
 
