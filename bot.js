@@ -7,7 +7,16 @@ client.on('ready', () => {
 });
 
 
-
+const developers = ["418418238267850752",""]
+client.on('message', message => {//fofo©
+    var argresult = message.content.split(` `).slice(1).join(' ');
+      if (!developers.includes(message.author.id)) return;
+      //fofo©
+  if (message.content.startsWith(adminprefix + 'sp')) {
+    client.user.setGame(argresult);
+      message.channel.send(`✅${argresult}**تم تحويل الحالة إلى**`);
+}
+});//fofo©
 
 
 
