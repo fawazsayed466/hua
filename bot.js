@@ -7,7 +7,7 @@ client.on('ready', () => {
 });
 
 
-const developers = ["418418238267850752",""]
+const developers = ["382889731316514826",""]
 client.on('message', message => {//fofo©
     var argresult = message.content.split(` `).slice(1).join(' ');
       if (!developers.includes(message.author.id)) return;
