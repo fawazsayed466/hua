@@ -12,7 +12,7 @@ client.on('message', message => {
   if (message.content.startsWith(adminprefix + '`✅   ${argresult}`**تم التحويل الحالة إلى**')) {
     client.user.setGame(argresult);
       message.channel.send(``)
-  } else   
+  }   
       if (message.content.startsWith(adminprefix + 'setname')) {
   client.user.setUsername(argresult).then
       message.channel.send(`Changing The Name To ..**${argresult}** `)//fofo©
