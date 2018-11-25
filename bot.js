@@ -1,7 +1,10 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const adminprefix = "F";
+ const adminprefix = "F";
 
+client.on('ready', () => {
+  console.log('Im read');
+});
 
 
 const developers = ["382889731316514826",""]
@@ -12,7 +15,7 @@ client.on('message', message => {
   if (message.content.startsWith(adminprefix + '`✅   ${argresult}`**تم التحويل الحالة إلى**')) {
     client.user.setGame(argresult);
       message.channel.send(``)
-  }   
+  } else  
       if (message.content.startsWith(adminprefix + 'setname')) {
   client.user.setUsername(argresult).then
       message.channel.send(`Changing The Name To ..**${argresult}** `)//fofo©
