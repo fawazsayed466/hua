@@ -1,23 +1,16 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
- const adminprefix = "F";
+const prefix = "$";
+const adminprefix = "F";
 
 client.on('ready', () => {
   console.log('Im read');
 });
 
 
-const developers = ["382889731316514826",""]
-client.on('message', message => {//fofo©
-    var argresult = message.content.split(` `).slice(1).join(' ');
-      if (!developers.includes(message.author.id)) return;
-      //fofo©
-  if (message.content.startsWith(adminprefix + 'sp')) {
-    client.user.setGame(argresult);
-      message.channel.send(`**تم تحويل الحالة إلى**${argresult}✅`);
-}
-});//fofo©
-
+client.on('guildMemberAdd', member =>{
+    member.addRole(member.guild.roles.find(x => x.name === 'Members'), "Auto-Role")
+});
 
 
 
