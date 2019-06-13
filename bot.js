@@ -24,7 +24,7 @@ client.user.setGame(`SM Welcomer,`);
 
 
 client.on('guildMemberAdd', member => {
-     const welcomer =  member.guild.channels.find('name', 'sm-chat');
+     const welcomer =  member.guild.channels.find('name', 'chat');
     if(!welcomer) return;
       if(welcomer) {
          moment.locale('ar-ly');
