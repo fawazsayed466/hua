@@ -4,7 +4,6 @@ const convert = require("hh-mm-ss")
 const dateFormat = require('dateformat');
 const fs = require('fs');
 const pretty = require('pretty-ms');
-const rn = require('random-number');
 const moment = require('moment');
 var Canvas = require('canvas')
 var jimp = require('jimp')
@@ -42,7 +41,7 @@ const w = ['./welcome.png'];
          let Image = Canvas.Image,
             canvas = new Canvas(400, 200),
             ctx = canvas.getContext('2d');
-        fs.readFile(`${w[Math.floor(Math.random() * w.length)]}`, function (err, Background) {
+        fs.readFile(`${w[Math.floor(Math.BLACK() * w.length)]}`, function (err, Background) {
             if (err) return console.log(err);
             let BG = Canvas.Image;
             let ground = new Image;
