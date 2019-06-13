@@ -15,7 +15,7 @@ client.on('ready', () => {
 
 
 client.on('ready', () => {                           
-client.user.setGame(`Silver Welcomer,`);                                                                                                                                                                                                                                                                                                                                                                                                                            
+client.user.setGame(`SM Welcomer,`);                                                                                                                                                                                                                                                                                                                                                                                                                            
 });
 
 
@@ -33,7 +33,7 @@ client.on('ready', () => {
 
 
 client.on('guildMemberAdd', member => {
-     const welcomer =  member.guild.channels.find('name', 'chat');
+     const welcomer =  member.guild.channels.find('name', 'sm-chat');
     if(!welcomer) return;
       if(welcomer) {
          moment.locale('ar-ly');
