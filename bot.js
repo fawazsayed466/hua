@@ -20,15 +20,6 @@ client.user.setGame(`SM Welcomer,`);
 
 
 
-client.on('ready', () => {
-    console.log(`Logged in as ${client.user.tag}!`);
-    console.log(`in ${client.guilds.size} servers `)
-    console.log(`[Codes] ${client.users.size}`)
-    client.user.setStatus("online")
-});
-
-
-
 
 
 
